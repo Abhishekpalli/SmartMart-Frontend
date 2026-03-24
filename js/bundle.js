@@ -278,7 +278,7 @@ function renderInventory(inventory) {
       <td><strong style="font-size:15px">${i.qty}</strong><span style="font-size:11px;color:#718096"> units</span></td>
       <td>${i.reorder}</td>
       <td><span class="badge ${badgeClass}">${status}</span></td>
-      <td><button class="btn-sm btn-sm-success" onclick="quickRestock(${i.id},${i.storeId},${i.reorder})">+ Restock</button></td>
+      <td><button class="btn-sm btn-sm-success" onclick="quickRestock(${i.productId},${i.storeId},${i.reorder})">+ Restock</button></td>
     </tr>`;
   }).join('');
 }
